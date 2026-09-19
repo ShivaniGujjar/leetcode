@@ -1,23 +1,27 @@
 class Solution {
     public boolean isPalindrome(int x) {
-        
+
         int num = x;
-        int palindromeNum = 0;
 
-        while(num>0){
+        int ans = 0;
 
-            int digit = num%10;
+        while (num > 0) {
 
-            palindromeNum = palindromeNum*10 + digit;
+            int lastDigit = num % 10;
 
-            num = num/10;
+            ans = ans * 10 + lastDigit;
+
+            num = num / 10;
+
         }
 
-        if(palindromeNum==x){
+        if (ans == x) {
             return true;
         }
 
-        return false;
+        else {
+            return false;
+        }
 
     }
 }
