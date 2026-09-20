@@ -1,12 +1,11 @@
 class Solution {
     public boolean checkPerfectNumber(int num) {
 
-        int x = num;
         int sum = 0;
 
-        for (int i = 1; i < x; i++) {
+        for (int i = 1; i < num; i++) {
 
-            if (x % i == 0) {
+            if (num % i == 0) {
                 sum += i;
             }
 
